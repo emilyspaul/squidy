@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.Tests.API", "Squidy.Service.Tests.API\Squidy.Service.Tests.API.csproj", "{691E8B91-1A7E-40DF-8D45-CD8BEC61BFC8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{81675425-2953-480D-A44E-A647F4D76BA6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.Business", "Squidy.Service.Business\Squidy.Service.Business.csproj", "{33444129-F37F-40E0-8D95-F304E2FF029E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.Tests.API", "tests\Squidy.Service.Tests.API\Squidy.Service.Tests.API.csproj", "{691E8B91-1A7E-40DF-8D45-CD8BEC61BFC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.Tests.Business", "Squidy.Service.Tests.Business\Squidy.Service.Tests.Business.csproj", "{CBCDE98B-C90B-45D6-A809-DA73628DB739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.Tests.Business", "tests\Squidy.Service.Tests.Business\Squidy.Service.Tests.Business.csproj", "{CBCDE98B-C90B-45D6-A809-DA73628DB739}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Common.Data", "Squidy.Common.Data\Squidy.Common.Data.csproj", "{602F2D32-829B-4488-BCDE-54BC851E50C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squidy.Common.Tests.Models", "tests\Squidy.Common.Tests.Models\Squidy.Common.Tests.Models.csproj", "{394102C6-EA6F-4AE7-8652-200A28F62206}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.API", "Squidy.Service.API\Squidy.Service.API.csproj", "{62E49D7B-BD5E-4176-8F8F-0B3FCAAA2E7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.Business", "src\Squidy.Service.Business\Squidy.Service.Business.csproj", "{33444129-F37F-40E0-8D95-F304E2FF029E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squidy.Common.Models", "Squidy.Common.Models\Squidy.Common.Models.csproj", "{71638A1D-8EB8-4911-979A-FD145F9D804D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Common.Data", "src\Squidy.Common.Data\Squidy.Common.Data.csproj", "{602F2D32-829B-4488-BCDE-54BC851E50C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squidy.Common.Tests.Models", "Squidy.Common.Tests.Models\Squidy.Common.Tests.Models.csproj", "{394102C6-EA6F-4AE7-8652-200A28F62206}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squidy.Service.API", "src\Squidy.Service.API\Squidy.Service.API.csproj", "{62E49D7B-BD5E-4176-8F8F-0B3FCAAA2E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squidy.Common.Models", "src\Squidy.Common.Models\Squidy.Common.Models.csproj", "{71638A1D-8EB8-4911-979A-FD145F9D804D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
