@@ -1,0 +1,17 @@
+
+src/.vs/
+src/Squidy.Common.Data/bin/
+src/Squidy.Common.Data/obj/
+src/Squidy.Common.Models/bin/
+src/Squidy.Common.Models/obj/
+src/Squidy.Common.Tests.Models/bin/
+src/Squidy.Common.Tests.Models/obj/
+src/Squidy.Service.API/obj/
+src/Squidy.Service.API/bin/
+src/Squidy.Service.API/wwwroot/lib/
+src/Squidy.Service.Business/bin/
+src/Squidy.Service.Business/obj/
+src/Squidy.Service.Tests.API/bin/
+src/Squidy.Service.Tests.API/obj/
+src/Squidy.Service.Tests.Business/bin/
+src/Squidy.Service.Tests.Business/obj/
