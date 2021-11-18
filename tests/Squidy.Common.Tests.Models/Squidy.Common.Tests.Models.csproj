@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Squidy.Common.Data\Squidy.Common.Data.csproj" />
-    <ProjectReference Include="..\Squidy.Common.Models\Squidy.Common.Models.csproj" />
-    <ProjectReference Include="..\Squidy.Service.Business\Squidy.Service.Business.csproj" />
+    <ProjectReference Include="..\..\src\Squidy.Common.Data\Squidy.Common.Data.csproj" />
+    <ProjectReference Include="..\..\src\Squidy.Common.Models\Squidy.Common.Models.csproj" />
+    <ProjectReference Include="..\..\src\Squidy.Service.Business\Squidy.Service.Business.csproj" />
   </ItemGroup>
 
 </Project>
