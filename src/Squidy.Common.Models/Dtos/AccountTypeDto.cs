@@ -1,13 +1,20 @@
 ﻿using Squidy.Common.Models.Dtos.Interfaces;
-using Squidy.Common.Models.Enums;
 
 namespace Squidy.Common.Models.Dtos
 {
     /// <summary>
-    /// Subscription plan details
+    /// Account type details
     /// </summary>
-    public class SubscriptionPlanDto : IDtoWithIdNameDescription, ITrackedDto
+    public class AccountTypeDto : IDtoWithIdNameDescription, ITrackedDto
     {
+        /// <summary>
+        /// Default constructor adding an empty SubscriptionPlan
+        /// </summary>
+        public AccountTypeDto()
+        {
+            SubscriptionPlan = new SubscriptionPlanDto();
+        }
+
         /// <summary>
         /// Unique identifier for the subscription plan
         /// </summary>
@@ -29,17 +36,22 @@ namespace Squidy.Common.Models.Dtos
         public decimal Amount { get; set; }
 
         /// <summary>
-        /// Frequency of charges for the subscription plan
+        /// Associated subscription plan with account type
         /// </summary>
-        public PlanFrequency Frequency { get; set; }
+        public SubscriptionPlanDto SubscriptionPlan { get; set; }
 
         /// <summary>
-        /// Date the subscription plan added to the data store
+        /// Status of the account type
+        /// </summary>
+        public bool IsActive { get; set; }
+
+        /// <summary>
+        /// Date the account type added to the data store
         /// </summary>
         public DateTime CreatedDate { get; set; }
 
         /// <summary>
-        /// Date the subscription plan changed in the data store
+        /// Date the account type changed in the data store
         /// </summary>
         public DateTime? UpdatedDate { get; set; }
     }

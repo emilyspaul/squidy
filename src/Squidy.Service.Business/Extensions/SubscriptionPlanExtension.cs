@@ -5,7 +5,7 @@ using Squidy.Common.Models.Enums;
 namespace Squidy.Service.Business.Extensions
 {
     /// <summary>
-    /// Subscripiton plan details
+    /// Subscription plan dto extensions
     /// </summary>
     public static class SubscriptionPlanExtension 
     {
