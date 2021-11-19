@@ -3,42 +3,43 @@
 namespace Squidy.Common.Models.Dtos
 {
     /// <summary>
-    /// Account type details
+    /// Account details
     /// </summary>
-    public class AccountTypeDto : IDtoWithIdNameDescription, ITrackedDto
+    public class AccountDto : IDtoWithId, ITrackedDto
     {
         /// <summary>
-        /// Default constructor adding an empty SubscriptionPlan
+        /// Default constructor adding an empty AccountType & User
         /// </summary>
-        public AccountTypeDto()
+        public AccountDto()
         {
-            SubscriptionPlan = new SubscriptionPlanDto();
+            AccountType = new AccountTypeDto();
+            User = new UserDto();
         }
 
         /// <summary>
-        /// Unique identifier for the account type
+        /// Unique identifier for the account
         /// </summary>
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Short description for the account type
+        /// Short description for the account
         /// </summary>
-        public string? Name { get; set; }
+        public string? Title { get; set; }
 
         /// <summary>
-        /// Long description for the account type
+        /// Associated account type with account
         /// </summary>
-        public string? Description { get; set; }
+        public AccountTypeDto AccountType { get; set; }
 
         /// <summary>
-        /// Associated subscription plan with account type
+        /// Associated user with account
         /// </summary>
-        public SubscriptionPlanDto SubscriptionPlan { get; set; }
+        public UserDto User { get; set; }
 
         /// <summary>
         /// Status of the account type
         /// </summary>
-        public bool IsActive { get; set; }
+        public bool IsExpired { get; set; }
 
         /// <summary>
         /// Date the account type added to the data store
