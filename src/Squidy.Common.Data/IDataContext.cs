@@ -8,6 +8,6 @@ namespace Squidy.Common.Data
     public interface IDataContext
     {
         Task<T> GetEntityFor<T>(Guid id) where T : IEntityWithId;
-        Task<T> GetTrackedEntityFor<T>(int id) where T : IEntityWithId;   
+        Task<T> GetLookupEntityFor<T>(int id) where T : ILookupEntity;   
     }
 }

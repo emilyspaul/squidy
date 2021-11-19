@@ -8,15 +8,15 @@ namespace Squidy.Service.Business.Extensions
         internal static void HydrateBaseFromEntity(this IDtoWithIdNameDescription dto, 
                                                    IEntityWithIdNameDescription entity)
         {
-            dto.Id = entity.Id;
-            dto.Name = entity.Name; 
-            dto.Description = entity.Description;
+            dto.Id = entity?.Id ?? Guid.Empty;
+            dto.Name = entity?.Name; 
+            dto.Description = entity?.Description;
         }
 
         internal static void HydrateTrackingDataFromEntity(this ITrackedDto dto, ITrackedEntity entity)
         {
-            dto.CreatedDate = entity.CreatedDate;
-            dto.UpdatedDate = entity.UpdatedDate;
+            dto.CreatedDate = entity?.CreatedDate ?? DateTime.MinValue;
+            dto.UpdatedDate = entity?.UpdatedDate;
         }
     }
 }

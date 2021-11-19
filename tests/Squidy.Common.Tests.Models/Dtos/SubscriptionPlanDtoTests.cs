@@ -11,13 +11,16 @@ namespace Squidy.Common.Tests.Models.Dtos
     public class SubscriptionPlanDtoTests
     {
         [TestMethod]
-        public void HydrateFromEntity()
+        [DataRow("Test Plan Name", "Test Plan Description", 10)]
+        [DataRow("", "Test Plan Description", 10)]
+        [DataRow("", "", 10)]
+        [DataRow("", "", -1)]
+        [DataRow(null, "Test Plan Description", 10)]
+        [DataRow(null, null, 10)]
+        public void HydrateFromEntity(string expectedName, string expectedDescription, int expectedAmount)
         {
             var expectedId = Guid.NewGuid();
-            var expectedName = "Test Plan Name";
-            var expectedDescription = "Test Plan Description";
             var expectedFrequency = PlanFrequency.Monthly;
-            var expectedAmount = 10;
             var expectedCreatedDate = DateTime.Now.AddDays(-2);
             var expectedUpdatedDate = DateTime.Now.AddDays(-1);
 
