@@ -8,6 +8,11 @@ namespace Squidy.Common.Data
     {
         protected override void OnModelCreating(ModelBuilder builder)
         {
+
+            builder.Entity<Account>()
+                .Property(b => b.IsExpired)
+                .HasDefaultValue(false);
+
             builder.Entity<AccountType>()
                 .Property(b => b.IsActive)
                 .HasDefaultValue(true);
@@ -19,6 +24,7 @@ namespace Squidy.Common.Data
         public Task<T> GetLookupEntityFor<T>(int id) where T : ILookupEntity
             => throw new NotImplementedException();
 
+        public DbSet<Account>? Accounts { get; set; }
         public DbSet<AccountType>? AccountTypes { get; set; }
         public DbSet<Icon>? Icons { get; set; }
         public DbSet<SubscriptionPlan>? SubscriptionPlans { get; set; }
